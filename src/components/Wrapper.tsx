@@ -1,5 +1,11 @@
 import { Box } from "@chakra-ui/react";
 
-export const Wrapper = () => {
-  return <Box w="500px" h="1px" background="white" margin="auto"></Box>;
+type Colors = "orange" | "white";
+
+interface IWrapperProps {
+  color: Colors;
+}
+
+export const Wrapper = ({ color }: IWrapperProps) => {
+  return <Box w="500px" h="1px" background={color} margin="auto"></Box>;
 };

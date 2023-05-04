@@ -16,19 +16,17 @@ interface ITableDataProps {
 export const TableData = ({ title }: ITableDataProps) => {
   return (
     <Container>
-      <Text mt="20px" ml="15%" color="white" fontSize="30px" fontWeight="bold">
+      <Text mt="20px" color="white" fontSize="30px" fontWeight="bold">
         {title}
       </Text>
-      <Table ml="15%" cellPadding="5px">
+      <Table mt="10px">
         <Thead color="gray.700">
-          <Tr>
-            <Th fontWeight="200">Min</Th>
-            <Th fontWeight="200">Max</Th>
-            <Th></Th>
-          </Tr>
+          <Th fontWeight="200">Min</Th>
+          <Th fontWeight="200">Max</Th>
+          <Th></Th>
         </Thead>
-        <Tbody>
-          <Tr fontWeight="bold" color="gray.700">
+        <Tbody p="10px">
+          <Tr fontWeight="bold" color="gray.700" >
             <Td>18°</Td>
             <Td>20°</Td>
             <Td>Rio de Janeiro</Td>

@@ -8,14 +8,14 @@ export const InputText = () => {
       display="flex"
       alignItems="center"
       background="white"
-      width={["90%", "500px"]}
+      width={["90%", "100%"]}
       height="50px"
       justifyContent="center"
       gap="10px"
       paddingRight="15px"
       boxShadow={3}
       borderRadius="5px"
-      margin="0 auto 50px auto"
+      margin="15px auto 50px auto"
     >
       <Input
         w="100%"

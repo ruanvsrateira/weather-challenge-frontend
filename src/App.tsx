@@ -3,6 +3,7 @@ import { Container, Box, Text } from "@chakra-ui/react";
 import { InputText } from "./components/InputText";
 import { TableData } from "./components/TableData";
 import { Wrapper } from "./components/Wrapper";
+import { CountryInformation } from "./components/CountryInformation";
 
 export default function App() {
   return (
@@ -15,17 +16,17 @@ export default function App() {
     >
       <Box>
         <Text
-          mt="100px"
+          mt="70px"
           fontSize="60px"
           color="white"
           fontWeight="bold"
           textAlign="center"
-          mb="50px"
         >
           Previsão do Tempo
         </Text>
+        <CountryInformation />
         <InputText />
-        <Wrapper />
+        <Wrapper color="white" />
         <TableData title="Capitais" />
       </Box>
     </Container>

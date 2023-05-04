@@ -10,7 +10,8 @@ interface ICountryInformationProps {
 export const CountryInformation = ({ onClose }: ICountryInformationProps) => {
   return (
     <Container
-      w="100%"
+      w="90%"
+      margin="auto"
       bg="white"
       mt="25px"
       p="15px"

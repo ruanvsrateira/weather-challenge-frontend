@@ -10,8 +10,15 @@ export default function App() {
     false
   );
 
-  function handleSearchCountry() {
+  async function handleSearchCountry(countryName: string) {
     setShowCuntryInformation(true);
+    const apiKey = "678a7246bb5a412ab09123311230405";
+
+    await fetch(
+      `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${countryName}`
+    )
+      .then((res) => res.json())
+      .then((data) => console.log(data));
   }
 
   function handleCloseCountryInformation() {
@@ -20,23 +27,25 @@ export default function App() {
 
   return (
     <Container
-      width="100%"
-      height="100%"
+      minHeight="100%"
       display="flex"
       flexDir="column"
       alignItems="center"
+      justifyContent="center"
     >
       <Box>
         <Text
-          mt="70px"
           fontSize="60px"
           color="white"
+          mb={showContryInformation ? "" : "70px"}
           fontWeight="bold"
           textAlign="center"
         >
           Previsão do Tempo
         </Text>
-        {showContryInformation && <CountryInformation onClose={handleCloseCountryInformation} />}
+        {showContryInformation && (
+          <CountryInformation onClose={handleCloseCountryInformation} />
+        )}
         <InputText onSearch={handleSearchCountry} />
         <Wrapper color="white" />
         <TableData title="Capitais" />

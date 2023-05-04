@@ -19,7 +19,7 @@ export const TableData = ({ title }: ITableDataProps) => {
       <Text mt="20px" color="white" fontSize="30px" fontWeight="bold">
         {title}
       </Text>
-      <Container display="flex" w="100%" gap="20px">
+      <Container display="flex" w="100%" gap="20px" flexDir={["column", "row"]}>
         <Table mt="10px">
           <Thead color="gray.700">
             <Th fontWeight="200">Min</Th>

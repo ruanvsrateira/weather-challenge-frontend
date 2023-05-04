@@ -33,11 +33,11 @@ export default function App() {
       alignItems="center"
       justifyContent="center"
     >
-      <Box>
+      <Box width={["100%", "auto"]}>
         <Text
-          fontSize="60px"
+          fontSize={["40px ", "60px"]}
           color="white"
-          mb={showContryInformation ? "" : "70px"}
+          mb={showContryInformation ? "" : ["0px", "50px"]}
           fontWeight="bold"
           textAlign="center"
         >

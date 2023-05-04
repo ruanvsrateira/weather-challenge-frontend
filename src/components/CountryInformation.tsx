@@ -10,11 +10,11 @@ interface ICountryInformationProps {
 export const CountryInformation = ({ onClose }: ICountryInformationProps) => {
   return (
     <Container
-      w="90%"
+      width={["100%", "90%"]}
       margin="auto"
       bg="white"
-      mt="25px"
-      p="15px"
+      mt={["10px", "25px"]}
+      p={["20px", "15px"]}
       display="flex"
       flexDir="column"
       gap="20px"
@@ -24,14 +24,14 @@ export const CountryInformation = ({ onClose }: ICountryInformationProps) => {
           Niterói, RJ - Brasil
         </Text>
         <IoMdClose
-          size="20px"
+          size="25px"
           color="orange"
           onClick={onClose}
           cursor="pointer"
         />
       </Container>
 
-      <Text color="gray.600" fontSize="50px" fontWeight="bold">
+      <Text color="gray.600" fontSize={["40", "50px"]} fontWeight="bold">
         20°C Dublado
       </Text>
 
@@ -71,69 +71,69 @@ export const CountryInformation = ({ onClose }: ICountryInformationProps) => {
       <Container
         display="flex"
         alignItems="center"
-        justifyContent="space-around"
+        justifyContent="space-between"
       >
         <Container display="flex" flexDir="column" alignItems="center">
-          <Text color="gray.600" fontWeight="bold" fontSize="20px">
+          <Text color="gray.600" fontWeight="bold" fontSize={["15px", "20px"]}>
             Segunda
           </Text>
           <Container display="flex" gap="15px">
-            <Text color="orange" fontSize="15px" fontWeight="bold">
+            <Text color="orange" fontSize="13px" fontWeight="bold">
               18°C
             </Text>
-            <Text color="orange" fontSize="15px" fontWeight="bold">
+            <Text color="orange" fontSize="13px" fontWeight="bold">
               26°C
             </Text>
           </Container>
         </Container>
         <Container display="flex" flexDir="column" alignItems="center">
-          <Text color="gray.600" fontWeight="bold" fontSize="20px">
+          <Text color="gray.600" fontWeight="bold" fontSize={["15px", "20px"]}>
             Terça
           </Text>
           <Container display="flex" gap="15px">
-            <Text color="orange" fontSize="15px" fontWeight="bold">
+            <Text color="orange" fontSize="13px" fontWeight="bold">
               18°C
             </Text>
-            <Text color="orange" fontSize="15px" fontWeight="bold">
+            <Text color="orange" fontSize="13px" fontWeight="bold">
               26°C
             </Text>
           </Container>
         </Container>
         <Container display="flex" flexDir="column" alignItems="center">
-          <Text color="gray.600" fontWeight="bold" fontSize="20px">
+          <Text color="gray.600" fontWeight="bold" fontSize={["15px", "20px"]}>
             Quarta
           </Text>
           <Container display="flex" gap="15px">
-            <Text color="orange" fontSize="15px" fontWeight="bold">
+            <Text color="orange" fontSize="13px" fontWeight="bold">
               18°C
             </Text>
-            <Text color="orange" fontSize="15px" fontWeight="bold">
+            <Text color="orange" fontSize="13px" fontWeight="bold">
               26°C
             </Text>
           </Container>
         </Container>
         <Container display="flex" flexDir="column" alignItems="center">
-          <Text color="gray.600" fontWeight="bold" fontSize="20px">
+          <Text color="gray.600" fontWeight="bold" fontSize={["15px", "20px"]}>
             Quinta
           </Text>
           <Container display="flex" gap="15px">
-            <Text color="orange" fontSize="15px" fontWeight="bold">
+            <Text color="orange" fontSize="13px" fontWeight="bold">
               18°C
             </Text>
-            <Text color="orange" fontSize="15px" fontWeight="bold">
+            <Text color="orange" fontSize="13px" fontWeight="bold">
               26°C
             </Text>
           </Container>
         </Container>
         <Container display="flex" flexDir="column" alignItems="center">
-          <Text color="gray.600" fontWeight="bold" fontSize="20px">
+          <Text color="gray.600" fontWeight="bold" fontSize={["15px", "20px"]}>
             Sexta
           </Text>
           <Container display="flex" gap="15px">
-            <Text color="orange" fontSize="15px" fontWeight="bold">
+            <Text color="orange" fontSize="13px" fontWeight="bold">
               18°C
             </Text>
-            <Text color="orange" fontSize="15px" fontWeight="bold">
+            <Text color="orange" fontSize="13px" fontWeight="bold">
               26°C
             </Text>
           </Container>

@@ -46,7 +46,7 @@ export const CountryInformation = ({ onClose }: ICountryInformationProps) => {
             16°
           </Container>
           <Container display="flex">
-            <Text fontWeight="200">Sensação:</Text>
+            <Text fontWeight="200">Sensação:&nbsp;</Text>
             <Text color="gray.600" fontWeight="bold">
               19°C
             </Text>
@@ -54,13 +54,13 @@ export const CountryInformation = ({ onClose }: ICountryInformationProps) => {
         </Container>
         <Container display="flex" gap="20px">
           <Container display="flex">
-            <Text fontWeight="200">Vento:</Text>
+            <Text fontWeight="200">Vento:&nbsp;</Text>
             <Text color="gray.600" fontWeight="bold">
               18Km/h
             </Text>
           </Container>
           <Container display="flex">
-            <Text fontWeight="200">Humidade:</Text>
+            <Text fontWeight="200">Humidade:&nbsp;</Text>
             <Text color="gray.600" fontWeight="bold">
               89%
             </Text>
@@ -77,7 +77,7 @@ export const CountryInformation = ({ onClose }: ICountryInformationProps) => {
           <Text color="gray.600" fontWeight="bold" fontSize={["15px", "20px"]}>
             Segunda
           </Text>
-          <Container display="flex" gap="15px">
+          <Container display="flex" gap="5px">
             <Text color="orange" fontSize="13px" fontWeight="bold">
               18°C
             </Text>
@@ -90,7 +90,7 @@ export const CountryInformation = ({ onClose }: ICountryInformationProps) => {
           <Text color="gray.600" fontWeight="bold" fontSize={["15px", "20px"]}>
             Terça
           </Text>
-          <Container display="flex" gap="15px">
+          <Container display="flex" gap="5px">
             <Text color="orange" fontSize="13px" fontWeight="bold">
               18°C
             </Text>
@@ -103,7 +103,7 @@ export const CountryInformation = ({ onClose }: ICountryInformationProps) => {
           <Text color="gray.600" fontWeight="bold" fontSize={["15px", "20px"]}>
             Quarta
           </Text>
-          <Container display="flex" gap="15px">
+          <Container display="flex" gap="5px">
             <Text color="orange" fontSize="13px" fontWeight="bold">
               18°C
             </Text>
@@ -116,7 +116,7 @@ export const CountryInformation = ({ onClose }: ICountryInformationProps) => {
           <Text color="gray.600" fontWeight="bold" fontSize={["15px", "20px"]}>
             Quinta
           </Text>
-          <Container display="flex" gap="15px">
+          <Container display="flex" gap="5px">
             <Text color="orange" fontSize="13px" fontWeight="bold">
               18°C
             </Text>
@@ -129,7 +129,7 @@ export const CountryInformation = ({ onClose }: ICountryInformationProps) => {
           <Text color="gray.600" fontWeight="bold" fontSize={["15px", "20px"]}>
             Sexta
           </Text>
-          <Container display="flex" gap="15px">
+          <Container display="flex" gap="5px">
             <Text color="orange" fontSize="13px" fontWeight="bold">
               18°C
             </Text>

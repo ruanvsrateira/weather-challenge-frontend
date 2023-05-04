@@ -7,5 +7,5 @@ interface IWrapperProps {
 }
 
 export const Wrapper = ({ color }: IWrapperProps) => {
-  return <Box w="500px" h="1px" background={color} margin="auto"></Box>;
+  return <Box w="100%" h="1px" background={color} margin="auto"></Box>;
 };

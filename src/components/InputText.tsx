@@ -2,7 +2,11 @@ import { Container, Input, Button } from "@chakra-ui/react";
 
 import { FaSearch } from "react-icons/fa";
 
-export const InputText = () => {
+interface IInputTextProps {
+  onSearch: () => void;
+}
+
+export const InputText = ({ onSearch }: IInputTextProps) => {
   return (
     <Container
       display="flex"
@@ -25,7 +29,7 @@ export const InputText = () => {
         borderRadius="5px"
       />
       <Button>
-        <FaSearch />
+        <FaSearch onClick={onSearch} />
       </Button>
     </Container>
   );

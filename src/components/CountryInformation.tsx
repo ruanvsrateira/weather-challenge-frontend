@@ -3,7 +3,11 @@ import { IoMdClose } from "react-icons/io";
 import { FaArrowDown, FaArrowUp } from "react-icons/fa";
 import { Wrapper } from "./Wrapper";
 
-export const CountryInformation = () => {
+interface ICountryInformationProps {
+  onClose: () => void;
+}
+
+export const CountryInformation = ({ onClose }: ICountryInformationProps) => {
   return (
     <Container
       w="100%"
@@ -18,7 +22,12 @@ export const CountryInformation = () => {
         <Text fontWeight="semibold" color="gray.800">
           Niterói, RJ - Brasil
         </Text>
-        <IoMdClose size="20px" color="orange" />
+        <IoMdClose
+          size="20px"
+          color="orange"
+          onClick={onClose}
+          cursor="pointer"
+        />
       </Container>
 
       <Text color="gray.600" fontSize="50px" fontWeight="bold">
